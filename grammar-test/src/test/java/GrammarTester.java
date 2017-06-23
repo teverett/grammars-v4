@@ -1,4 +1,5 @@
 import org.antlr.v4.runtime.ParserRuleContext;
+import org.apache.commons.io.FilenameUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.snt.inmemantlr.GenericParser;
@@ -41,6 +42,15 @@ public class GrammarTester {
         return gp;
     }
 
+    private static boolean excludeFile(File f) {
+
+        if(FilenameUtils.getExtension(f.getName()).equals("errors") ||
+                FilenameUtils.getExtension(f.getName()).equals("tree")) {
+            return true;
+        }
+        return false;
+    }
+
     public static boolean run(File[] ok, File... gfile) {
         GenericParser gp = create(gfile);
 
@@ -52,6 +62,12 @@ public class GrammarTester {
         gp.setListener(dt);
 
         for (File f : ok) {
+
+            if(excludeFile(f)) {
+                LOGGER.info("skip {}", f.getAbsoluteFile());
+                continue;
+            }
+
             LOGGER.info("parse {}", f.getAbsoluteFile());
             try {
                 gp.parse(f);
@@ -70,6 +86,13 @@ public class GrammarTester {
         Map<String, Ast> ret = new HashMap<String, Ast>();
 
         for (File f : ok) {
+
+            
+            if(excludeFile(f)) {
+                LOGGER.info("skip {}", f.getAbsoluteFile());
+                continue;
+            }
+
             LOGGER.info("parse {}", f.getAbsoluteFile());
 
             try {
