@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.snt.inmemantlr.GenericParser;
 import org.snt.inmemantlr.exceptions.CompilationException;
 import org.snt.inmemantlr.exceptions.IllegalWorkflowException;
+import org.snt.inmemantlr.exceptions.ParsingException;
 import org.snt.inmemantlr.listener.DefaultTreeListener;
 import org.snt.inmemantlr.tool.ToolCustomizer;
 
@@ -20,15 +21,15 @@ public class TestStringTemplate {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(TestStringTemplate.class);
 
-    private static File [] ok = new File("../stringtemplate/examples")
+    private static File[] ok = new File("../stringtemplate/examples")
             .listFiles(new FileFilter() {
-        @Override
-        public boolean accept(File pathname) {
-            return pathname.isFile();
-        }
-    });
+                @Override
+                public boolean accept(File pathname) {
+                    return pathname.isFile();
+                }
+            });
 
-    private static File [] gfiles = new File [] {
+    private static File[] gfiles = new File[]{
             new File("../stringtemplate/STGLexer.g4"),
             new File("../stringtemplate/LexUnicode.g4"),
             new File("../stringtemplate/STParser.g4"),
@@ -52,7 +53,7 @@ public class TestStringTemplate {
 
         GenericParser gp = null;
         try {
-            gp = new GenericParser(tc,gfiles);
+            gp = new GenericParser(tc, gfiles);
         } catch (FileNotFoundException e) {
             assertTrue(false);
         }
@@ -80,19 +81,17 @@ public class TestStringTemplate {
 
         assertTrue(compile);
 
-        for(File f : ok) {
+        for (File f : ok) {
             LOGGER.info("parse {}", f.getAbsoluteFile());
             try {
-                try {
-                    gp.parse(f);
-                } catch (FileNotFoundException e) {
-                    Assert.assertTrue(false);
-                }
-            } catch (IllegalWorkflowException e) {
+
+                gp.parse(f);
+            } catch (IllegalWorkflowException |
+                    FileNotFoundException |
+                    ParsingException e) {
                 Assert.assertTrue(false);
             }
         }
-
 
     }
 

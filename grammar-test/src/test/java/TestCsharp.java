@@ -6,6 +6,7 @@ import org.slf4j.LoggerFactory;
 import org.snt.inmemantlr.GenericParser;
 import org.snt.inmemantlr.exceptions.CompilationException;
 import org.snt.inmemantlr.exceptions.IllegalWorkflowException;
+import org.snt.inmemantlr.exceptions.ParsingException;
 import org.snt.inmemantlr.listener.DefaultTreeListener;
 import org.snt.inmemantlr.tool.ToolCustomizer;
 
@@ -18,9 +19,9 @@ public class TestCsharp {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(TestCsharp.class);
 
-    private static File [] ok = new File("../csharp/examples").listFiles();
+    private static File[] ok = new File("../csharp/examples").listFiles();
 
-    private static File [] gfile =  new File [] {
+    private static File[] gfile = new File[]{
             new File("../csharp/CSharpLexer.g4"),
             new File("../csharp/CSharpParser.g4"),
     };
@@ -31,7 +32,7 @@ public class TestCsharp {
         ToolCustomizer tc = new ToolCustomizer() {
             @Override
             public void customize(Tool t) {
-                t.genPackage =  "org.antlr.parser.antlr4";
+                t.genPackage = "org.antlr.parser.antlr4";
             }
         };
 
@@ -57,15 +58,13 @@ public class TestCsharp {
 
         assertTrue(compile);
 
-        for(File f : ok) {
+        for (File f : ok) {
             LOGGER.info("parse {}", f.getAbsoluteFile());
             try {
-                try {
-                    gp.parse(f);
-                } catch (FileNotFoundException e) {
-                    Assert.assertTrue(false);
-                }
-            } catch (IllegalWorkflowException e) {
+                gp.parse(f);
+            } catch (IllegalWorkflowException |
+                    FileNotFoundException |
+                    ParsingException e) {
                 Assert.assertTrue(false);
             }
         }

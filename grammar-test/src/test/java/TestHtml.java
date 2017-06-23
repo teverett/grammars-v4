@@ -5,6 +5,7 @@ import org.slf4j.LoggerFactory;
 import org.snt.inmemantlr.GenericParser;
 import org.snt.inmemantlr.exceptions.CompilationException;
 import org.snt.inmemantlr.exceptions.IllegalWorkflowException;
+import org.snt.inmemantlr.exceptions.ParsingException;
 import org.snt.inmemantlr.listener.DefaultTreeListener;
 
 import java.io.File;
@@ -17,12 +18,12 @@ public class TestHtml {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(TestHtml.class);
 
-    private static File [] gfiles =  new File [] {
+    private static File[] gfiles = new File[]{
             new File("../html/HTMLLexer.g4"),
             new File("../html/HTMLParser.g4")
     };
 
-    private static File [] ok = new File("../html/examples").listFiles(new FileFilter() {
+    private static File[] ok = new File("../html/examples").listFiles(new FileFilter() {
         @Override
         public boolean accept(File pathname) {
             return pathname.isFile();
@@ -53,15 +54,13 @@ public class TestHtml {
 
         assertTrue(compile);
 
-        for(File f : ok) {
+        for (File f : ok) {
             LOGGER.info("parse {}", f.getAbsoluteFile());
             try {
-                try {
-                    gp.parse(f);
-                } catch (FileNotFoundException e) {
-                    Assert.assertTrue(false);
-                }
-            } catch (IllegalWorkflowException e) {
+                gp.parse(f);
+            } catch (IllegalWorkflowException |
+                    FileNotFoundException |
+                    ParsingException e) {
                 Assert.assertTrue(false);
             }
         }
