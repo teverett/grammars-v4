@@ -87,7 +87,7 @@ public class GrammarTester {
 
         for (File f : ok) {
 
-            
+
             if(excludeFile(f)) {
                 LOGGER.info("skip {}", f.getAbsoluteFile());
                 continue;
