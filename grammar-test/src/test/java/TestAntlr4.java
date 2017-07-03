@@ -1,4 +1,3 @@
-import org.antlr.v4.Tool;
 import org.junit.Assert;
 import org.junit.Test;
 import org.slf4j.Logger;
@@ -34,12 +33,7 @@ public class TestAntlr4 {
     @Test
     public void test() {
 
-        ToolCustomizer tc = new ToolCustomizer() {
-            @Override
-            public void customize(Tool t) {
-                t.genPackage = "org.antlr.parser.antlr4";
-            }
-        };
+        ToolCustomizer tc = t -> t.genPackage = "org.antlr.parser.antlr4";
 
         GenericParser gp = null;
         try {
@@ -71,7 +65,8 @@ public class TestAntlr4 {
         for (File f : ok) {
             LOGGER.info("parse {}", f.getAbsoluteFile());
             try {
-                gp.parse(f);
+                gp.parse(f, "grammarSpec", GenericParser.CaseSensitiveType
+                        .NONE);
             } catch (IllegalWorkflowException |
                     FileNotFoundException |
                     ParsingException e) {

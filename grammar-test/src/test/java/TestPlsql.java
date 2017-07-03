@@ -52,7 +52,7 @@ public class TestPlsql {
         for (File f : ok1) {
             LOGGER.info("parse {}", f.getAbsoluteFile());
             try {
-                gp.parse(f);
+                gp.parse(f, "compilation_unit", GenericParser.CaseSensitiveType.NONE);
             } catch (IllegalWorkflowException |
                     FileNotFoundException |
                     ParsingException e) {
@@ -63,7 +63,7 @@ public class TestPlsql {
         for (File f : ok2) {
             LOGGER.info("parse {}", f.getAbsoluteFile());
             try {
-                gp.parse(f);
+                gp.parse(f, "sql_script", GenericParser.CaseSensitiveType.NONE);
             } catch (IllegalWorkflowException |
                     FileNotFoundException |
                     ParsingException e) {

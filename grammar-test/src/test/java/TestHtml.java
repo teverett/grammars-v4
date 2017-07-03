@@ -9,7 +9,6 @@ import org.snt.inmemantlr.exceptions.ParsingException;
 import org.snt.inmemantlr.listener.DefaultTreeListener;
 
 import java.io.File;
-import java.io.FileFilter;
 import java.io.FileNotFoundException;
 
 import static org.junit.Assert.assertTrue;
@@ -23,12 +22,7 @@ public class TestHtml {
             new File("../html/HTMLParser.g4")
     };
 
-    private static File[] ok = new File("../html/examples").listFiles(new FileFilter() {
-        @Override
-        public boolean accept(File pathname) {
-            return pathname.isFile();
-        }
-    });
+    private static File[] ok = new File("../html/examples").listFiles(pathname -> pathname.isFile());
 
     @Test
     public void test() {
@@ -57,7 +51,7 @@ public class TestHtml {
         for (File f : ok) {
             LOGGER.info("parse {}", f.getAbsoluteFile());
             try {
-                gp.parse(f);
+                gp.parse(f,"htmlDocument", GenericParser.CaseSensitiveType.NONE);
             } catch (IllegalWorkflowException |
                     FileNotFoundException |
                     ParsingException e) {

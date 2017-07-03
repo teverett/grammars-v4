@@ -64,7 +64,7 @@ public class TestSwift2 {
         for(File f : ok) {
             LOGGER.info("parse {}", f.getAbsoluteFile());
             try {
-                gp.parse(f);
+                gp.parse(f, "top_level", GenericParser.CaseSensitiveType.NONE);
             } catch (IllegalWorkflowException |
                     FileNotFoundException |
                     ParsingException e) {

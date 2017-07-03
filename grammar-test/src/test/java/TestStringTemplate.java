@@ -64,12 +64,16 @@ public class TestStringTemplate {
             compile = false;
         }
 
+
+        gp.setParserName("org.antlr.parser.st4.STParser");
+        gp.setLexerName("org.antlr.parser.st4.STLexer");
+
         assertTrue(compile);
 
         for (File f : ok) {
             LOGGER.info("parse {}", f.getAbsoluteFile());
             try {
-                gp.parse(f);
+                gp.parse(f,"template", GenericParser.CaseSensitiveType.NONE);
             } catch (IllegalWorkflowException |
                     FileNotFoundException |
                     ParsingException e) {

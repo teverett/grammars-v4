@@ -51,7 +51,7 @@ public class GrammarTester {
         return false;
     }
 
-    public static boolean run(File[] ok, File... gfile) {
+    public static boolean run(File[] ok, String ept, File... gfile) {
         GenericParser gp = create(gfile);
 
         if (gp == null)
@@ -70,7 +70,7 @@ public class GrammarTester {
 
             LOGGER.info("parse {}", f.getAbsoluteFile());
             try {
-                gp.parse(f);
+                gp.parse(f,ept, GenericParser.CaseSensitiveType.NONE);
             } catch (FileNotFoundException | IllegalWorkflowException |
                     ParsingException e) {
                 LOGGER.error(e.getMessage());
