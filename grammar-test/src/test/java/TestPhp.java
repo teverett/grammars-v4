@@ -14,7 +14,7 @@ public class TestPhp {
     }
 
     private static File [] ok = new File("../php/examples").listFiles(
-            pathname -> pathname.isFile() && blist.contains(pathname)
+            pathname -> pathname.isFile() && !blist.contains(pathname.getName())
     );
 
     private static File [] gfiles = new File [] {
