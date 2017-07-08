@@ -24,6 +24,7 @@ public class TestVb6 {
 
     @Test
     public void test(){
+
         Set<File> ps = null;
         try {
             ps = Files.walk(Paths.get("../vb6/examples"))

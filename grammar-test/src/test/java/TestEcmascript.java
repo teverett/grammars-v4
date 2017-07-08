@@ -10,6 +10,6 @@ public class TestEcmascript {
 
     @Test
     public void test(){
-        Assert.assertTrue(GrammarTester.run(ok, "program", gfile));
+        Assert.assertTrue(GrammarTester.run(ok,gfile));
     }
 }
