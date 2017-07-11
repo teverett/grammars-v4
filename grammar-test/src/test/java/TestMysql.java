@@ -1,5 +1,6 @@
 import org.junit.Assert;
 import org.junit.Test;
+import org.snt.inmemantlr.GenericParser;
 
 import java.io.File;
 
@@ -15,7 +16,8 @@ public class TestMysql {
 
     @Test
     public void test(){
-        Assert.assertTrue(GrammarTester.run(ok, "root", gfiles));
+        Assert.assertTrue(GrammarTester.run(GenericParser.CaseSensitiveType
+                .UPPER,ok,"root", gfiles));
     }
 
 
