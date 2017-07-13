@@ -3,14 +3,18 @@ import org.junit.Test;
 
 import java.io.File;
 
-public class TestJava8 {
+public class TestJava8pt {
 
-    private static File [] ok = new File("../java8/examples").listFiles(pathname -> pathname.isFile());
+    private static File [] ok = new File("../java8-pt/examples").listFiles
+            (pathname -> pathname.isFile());
 
-    private static File gfile =  new File("../java8/Java8.g4");
+    private static File [] gfiles = new File [] {
+            new File("../java8-pt/JavaParser.g4"),
+            new File("../java8-pt/JavaLexer.g4")
+    };
 
     @Test
     public void test(){
-        Assert.assertTrue(GrammarTester.run(ok, "compilationUnit", gfile));
+        Assert.assertTrue(GrammarTester.run(ok, "compilationUnit", gfiles));
     }
 }
