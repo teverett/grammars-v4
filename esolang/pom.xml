@@ -21,6 +21,7 @@
         <module>lolcode</module>
         <module>loop</module>
         <module>nanofuck</module>
+        <module>picalculus</module>
         <module>sickbay</module>
         <module>skull</module>
         <module>snowball</module>
