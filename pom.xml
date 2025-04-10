@@ -137,6 +137,7 @@
 				<module>apex</module>
 				<module>apt</module>
 				<module>aql</module>
+                <module>arden</module>
 				<module>argus</module>
 				<module>arithmetic</module>
 				<module>asl</module>
@@ -165,7 +166,6 @@
 				<module>clojure</module>
 				<module>clu</module>
 				<module>cmake</module>
-				<module>cobol85</module>
 				<module>codeql</module>
 				<module>cookie</module>
 				<module>cpp</module>
@@ -230,6 +230,7 @@
 				<module>jam</module>
 				<module>janus</module>
 				<module>java</module>
+				<module>javacc</module>
 				<module>javadoc</module>
 				<module>javascript</module>
 				<module>joss</module>
@@ -322,14 +323,14 @@
 				<module>rfc3080</module>
 				<module>robotwars</module>
 				<module>romannumerals</module>
-                <module>ron</module>
+				<module>ron</module>
 				<module>rpn</module>
 				<module>ruby</module>
 				<module>rust</module>
 				<module>scala</module>
 				<module>scotty</module>
 				<module>scss</module>
-                <module>semver</module>
+				<module>semver</module>
 				<module>sexpression</module>
 				<module>sgf</module>
 				<module>sharc</module>
