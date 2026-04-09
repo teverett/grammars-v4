@@ -2,8 +2,10 @@
   "compilerOptions": {
     "module": "ES2020",
     "moduleResolution": "node",
-    "target": "ES6",
+    "ignoreDeprecations": "6.0",
+    "target": "ESNext",
     "noImplicitAny": true,
+    "types": ["node"],
   },
   "ts-node": {
     "esm": true,
