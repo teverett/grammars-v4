@@ -425,6 +425,7 @@
 				<module>ron</module>
 				<module>rpg3</module>
 				<module>rpn</module>
+				<module>ruby</module>
 				<module>ruleworks</module>
 				<module>rust</module>
                 <module>sapf</module>
@@ -475,6 +476,7 @@
 				<module>swift-fin</module>
 				<module>sysml-v2</module>
 				<module>szf</module>
+				<module>tcl</module>
 				<module>tcpdump</module>
 				<module>tcpheader</module>
 				<module>teal</module>
