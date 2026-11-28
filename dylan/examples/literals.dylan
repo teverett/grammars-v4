@@ -1,0 +1,10 @@
+define constant $sample-list = #(1, 2, 3);
+define constant $sample-vector = #[1, 2, 3];
+define constant $sample-symbol = #"red";
+define constant $sample-char = 'a';
+define constant $sample-string = "hello, \"world\"\n";
+define constant $sample-hex = #x1f4e;
+define constant $sample-bin = #b1010;
+define constant $sample-float = 3.14159e0;
+define constant $sample-bool-true = #t;
+define constant $sample-bool-false = #f;
