@@ -13,4 +13,4 @@ Licensed under the Apache 2.0
 ## Reference
 
 * [wikipedia](https://en.wikipedia.org/wiki/Redis)
-* [pldb](http://pldb.info/concepts/redis)
+* [pldb](http://pldb.io/concepts/redis)

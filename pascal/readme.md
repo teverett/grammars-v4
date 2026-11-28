@@ -1,5 +1,5 @@
 # Pascal Grammar
 
 ## Reference
-* [pldb](http://pldb.info/concepts/pascal)
+* [pldb](http://pldb.io/concepts/pascal)
 

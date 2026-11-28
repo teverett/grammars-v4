@@ -1,5 +1,5 @@
 # TOML Grammar
 
 ## Reference
-* [pldb](http://pldb.info/concepts/toml)
+* [pldb](http://pldb.io/concepts/toml)
 

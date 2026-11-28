@@ -22,5 +22,5 @@ for the target, run `python transformGrammar.py` from the command line to alter 
 * The grammar is ambiguous.
 
 ## Reference
-* [pldb](http://pldb.info/concepts/postgresql)
+* [pldb](http://pldb.io/concepts/postgresql)
 

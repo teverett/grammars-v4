@@ -31,4 +31,4 @@ KEBNF grammar.
 
 ## Reference
 
-- <http://pldb.info/concepts/sysml>
+- <http://pldb.io/concepts/sysml>

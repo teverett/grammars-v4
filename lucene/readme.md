@@ -1,5 +1,5 @@
 # Lucene Grammar
 
 ## Reference
-* [pldb](http://pldb.info/concepts/lucene-query-syntax)
+* [pldb](http://pldb.io/concepts/lucene-query-syntax)
 

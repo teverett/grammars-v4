@@ -317,6 +317,48 @@ function Get-GrammarsNeedsTest {
     return $grammars
 }
 
+function Initialize-CppRuntime {
+    # Builds the ANTLR4 C++ runtime once into a temporary directory and
+    # exports TRASH_ANTLR4_RUNTIME_ROOT. Returns the temp directory (for
+    # cleanup), or $null on failure. Mirrors the equivalent step in test.sh.
+    Write-Host "Building the shared ANTLR C++ runtime once for this test run." -ForegroundColor Green
+    $runDir = Join-Path ([System.IO.Path]::GetTempPath()) ("trash-cpp-runtime." + [System.Guid]::NewGuid().ToString("N").Substring(0, 8))
+    New-Item -ItemType Directory -Path $runDir | Out-Null
+    $buildDir = (Join-Path $runDir "build") -replace '\\', '/'
+    $templateDir = (Join-Path $templates "Cpp") -replace '\\', '/'
+    $sourceDir = (Join-Path $rootdir "cpp-runtime") -replace '\\', '/'
+
+    $cmakeArgs = @("-S", $sourceDir, "-B", $buildDir, "-DTRASH_CPP_TEMPLATE_DIR=$templateDir")
+    if ($IsWindows) {
+        $cmakeArgs += @("-G", "Visual Studio 18 2026", "-A", "x64")
+    }
+    & cmake @cmakeArgs 2>&1 | Write-Host
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host "Configuring the shared C++ runtime failed." -ForegroundColor Red
+        return $null
+    }
+    & cmake --build $buildDir --config Release --target build_runtime 2>&1 | Write-Host
+    if ($LASTEXITCODE -ne 0) {
+        Write-Host "Building the shared C++ runtime failed." -ForegroundColor Red
+        return $null
+    }
+
+    $root = "$buildDir/antlr4_runtime/src/antlr4_runtime"
+    if ($IsWindows) {
+        $lib = "$root/runtime/Cpp/runtime/Release/antlr4-runtime-static.lib"
+    }
+    else {
+        $lib = "$root/runtime/Cpp/runtime/libantlr4-runtime.a"
+    }
+    if (! (Test-Path -LiteralPath $lib -PathType Leaf)) {
+        Write-Host "C++ runtime build did not produce $lib" -ForegroundColor Red
+        return $null
+    }
+    $env:TRASH_ANTLR4_RUNTIME_ROOT = $root
+    Write-Host "TRASH_ANTLR4_RUNTIME_ROOT = $root"
+    return $runDir
+}
+
 function Test-AllGrammars {
     param (
         $PreviousCommit,
@@ -342,14 +384,34 @@ Write-Host "CurrentCommit = $CurrentCommit"
     $t = Get-Date
     $failedGrammars = @()
     $failedCases = @()
-    foreach ($g in $grammars) {
-        $state = Test-Grammar -Directory $g -Target $Target
-        if (!$state.Success) {
-            $success = $false
-            $failedGrammars += "$g ($($state.Stage))"
-            $failedCases += $state.FailedCases
-            Write-Host "$g failed at stage $($state.Stage) for target $Target" -ForegroundColor Red
-        }        
+
+    # Compile the C++ runtime once for this invocation. The generated
+    # CMakeLists.txt imports it via TRASH_ANTLR4_RUNTIME_ROOT instead of
+    # building its own copy (see templates/Cpp/st.CMakeLists.txt).
+    $cppRunDir = $null
+    if ($Target -eq "Cpp" -and @($grammars).Count -gt 0) {
+        $cppRunDir = Initialize-CppRuntime
+        if (! $cppRunDir) {
+            exit 1
+        }
+    }
+
+    try {
+        foreach ($g in $grammars) {
+            $state = Test-Grammar -Directory $g -Target $Target
+            if (!$state.Success) {
+                $success = $false
+                $failedGrammars += "$g ($($state.Stage))"
+                $failedCases += $state.FailedCases
+                Write-Host "$g failed at stage $($state.Stage) for target $Target" -ForegroundColor Red
+            }
+        }
+    }
+    finally {
+        if ($cppRunDir) {
+            Remove-Item Env:TRASH_ANTLR4_RUNTIME_ROOT -ErrorAction SilentlyContinue
+            Remove-Item -Recurse -Force -LiteralPath $cppRunDir -ErrorAction SilentlyContinue
+        }
     }
     Write-Host "finished in $((Get-Date)-$t)" -ForegroundColor Yellow
     if ($success) {

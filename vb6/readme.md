@@ -1,5 +1,5 @@
 # VB6 Grammar
 
 ## Reference
-* [pldb](http://pldb.info/concepts/visual-basic)
+* [pldb](http://pldb.io/concepts/visual-basic)
 

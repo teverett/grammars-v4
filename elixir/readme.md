@@ -1,5 +1,5 @@
 # Elixir
 
 ## Reference
-* [pldb](http://pldb.info/concepts/elixir)
+* [pldb](http://pldb.io/concepts/elixir)
 

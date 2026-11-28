@@ -1,5 +1,5 @@
 # APT Grammar
 
 ## Reference
-* [pldb](http://pldb.info/concepts/apt)
+* [pldb](http://pldb.io/concepts/apt)
 

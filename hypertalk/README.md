@@ -43,5 +43,5 @@ end mouseDown
 * Matt DeFano
 
 ## Reference
-* [pldb](http://pldb.info/concepts/hypertalk)
+* [pldb](http://pldb.io/concepts/hypertalk)
 

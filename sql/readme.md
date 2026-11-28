@@ -1,5 +1,5 @@
 # Sql
 
 ## Reference
-* [pldb](http://pldb.info/concepts/sql)
+* [pldb](http://pldb.io/concepts/sql)
 

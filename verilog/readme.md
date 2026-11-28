@@ -1,5 +1,5 @@
 # Verilog
 
 ## Reference
-* [pldb](http://pldb.info/concepts/verilog)
+* [pldb](http://pldb.io/concepts/verilog)
 

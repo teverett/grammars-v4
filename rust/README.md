@@ -4,7 +4,7 @@ This grammar is based on official language reference
 at https://doc.rust-lang.org/reference/.
 
 ## Reference
-* [pldb](http://pldb.info/concepts/rust)
+* [pldb](http://pldb.io/concepts/rust)
 
 
 ## License

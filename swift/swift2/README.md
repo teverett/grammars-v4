@@ -148,5 +148,5 @@ optional_binding_continuation_list
 ```
 
 ## Reference
-* [pldb](http://pldb.info/concepts/swift)
+* [pldb](http://pldb.io/concepts/swift)
 

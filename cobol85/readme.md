@@ -1,5 +1,5 @@
 # COBOL 85 Grammar
 
 ## Reference
-* [pldb](http://pldb.info/concepts/cobol)
+* [pldb](http://pldb.io/concepts/cobol)
 

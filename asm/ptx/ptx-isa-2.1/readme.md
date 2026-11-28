@@ -8,5 +8,5 @@ Ken Domino
 22 March 2023
 
 ## Reference
-* [pldb](http://pldb.info/concepts/ptx)
+* [pldb](http://pldb.io/concepts/ptx)
 

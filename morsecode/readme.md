@@ -1,5 +1,5 @@
 # Morsecode
 
 ## Reference
-* [pldb](http://pldb.info/concepts/morse-code)
+* [pldb](http://pldb.io/concepts/morse-code)
 

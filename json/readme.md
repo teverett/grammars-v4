@@ -1,5 +1,5 @@
 # JSON Grammar
 
 ## Reference
-* [pldb](http://pldb.info/concepts/json)
+* [pldb](http://pldb.io/concepts/json)
 

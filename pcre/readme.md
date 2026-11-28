@@ -1,5 +1,5 @@
 # PCRE Grammar
 
 ## Reference
-* [pldb](http://pldb.info/concepts/pcre)
+* [pldb](http://pldb.io/concepts/pcre)
 

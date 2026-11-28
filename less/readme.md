@@ -1,5 +1,5 @@
 # Less
 
 ## Reference
-* [pldb](http://pldb.info/concepts/less)
+* [pldb](http://pldb.io/concepts/less)
 

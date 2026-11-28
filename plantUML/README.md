@@ -15,7 +15,7 @@ EPL-2.0
 
 ## Reference
 
-* [pldb](http://pldb.info/concepts/plantuml)
+* [pldb](http://pldb.io/concepts/plantuml)
 * https://plantuml.com/
 * https://pdf.plantuml.net/PlantUML_Language_Reference_Guide_en.pdf
 * https://github.com/plantuml

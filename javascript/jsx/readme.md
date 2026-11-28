@@ -1,5 +1,5 @@
 # JSX Grammar
 
 ## Reference
-* [pldb](http://pldb.info/concepts/jsx)
+* [pldb](http://pldb.io/concepts/jsx)
 

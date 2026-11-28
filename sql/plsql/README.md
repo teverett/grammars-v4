@@ -17,7 +17,7 @@ User's Guide and Reference [html](https://docs.oracle.com/en/database/oracle/ora
 
 [wikipedia](https://en.wikipedia.org/wiki/PL/SQL)
 
-* [pldb](http://pldb.info/concepts/pl-sql)
+* [pldb](http://pldb.io/concepts/pl-sql)
 
 ## Issues
 * The grammar is ambiguous, but generally performs well.

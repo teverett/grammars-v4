@@ -9,5 +9,5 @@ An ANTLR4 grammar for [Eiffel](https://en.wikipedia.org/wiki/Eiffel_(programming
 * https://rosettacode.org/wiki/Category:Eiffel
 
 ## Reference
-* [pldb](http://pldb.info/concepts/eiffel)
+* [pldb](http://pldb.io/concepts/eiffel)
 

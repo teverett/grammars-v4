@@ -3,5 +3,5 @@
 An ANTLR4 grammar for [ron](https://github.com/ron-rs/ron)
 
 ## Reference
-* [pldb](http://pldb.info/concepts/ron)
+* [pldb](http://pldb.io/concepts/ron)
 

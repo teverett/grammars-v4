@@ -3,5 +3,5 @@
 https://yara.readthedocs.io/en/stable/
 
 ## Reference
-* [pldb](http://pldb.info/concepts/yara)
+* [pldb](http://pldb.io/concepts/yara)
 

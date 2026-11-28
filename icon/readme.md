@@ -1,5 +1,5 @@
 # Icon Grammar
 
 ## Reference
-* [pldb](http://pldb.info/concepts/icon)
+* [pldb](http://pldb.io/concepts/icon)
 

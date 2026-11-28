@@ -1,5 +1,5 @@
 # Kuka
 
 ## Reference
-* [pldb](http://pldb.info/concepts/kuka)
+* [pldb](http://pldb.io/concepts/kuka)
 

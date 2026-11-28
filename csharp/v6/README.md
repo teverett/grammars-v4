@@ -31,7 +31,7 @@ I tested this grammar on the following most popular .NET projects:
 * [ImageProcessor-2.3.0](https://github.com/JimBobSquarePants/ImageProcessor).
 * [Newtonsoft.Json-8.0.2](https://github.com/JamesNK/Newtonsoft.Json).
 
-There are some problems with deep recursion ([TestData.g.cs in CoreFx](https://github.com/dotnet/corefx/blob/master/src/Common/tests/System/Xml/XmlCoreTest/TestData.g.cs)),
+There are some problems with deep recursion (TestData.g.cs in CoreFx (github.com/dotnet/corefx/blob/master/src/Common/tests/System/Xml/XmlCoreTest/TestData.g.cs)),
 unicode chars
 ([sjis.cs in  Roslyn](https://github.com/dotnet/roslyn/blob/master/src/Compilers/Test/Resources/Core/Encoding/sjis.cs))
 and preprocessor directives.
@@ -39,7 +39,7 @@ and preprocessor directives.
 ANTLR parser from this grammar approximately ~5-7 slowly than Roslyn parser.
 
 ## Reference
-* [pldb](http://pldb.info/concepts/csharp)
+* [pldb](http://pldb.io/concepts/csharp)
 
 
 ## License

@@ -1,5 +1,5 @@
 # Python2 Grammar
 
 ## Reference
-* [pldb](http://pldb.info/concepts/python)
+* [pldb](http://pldb.io/concepts/python)
 

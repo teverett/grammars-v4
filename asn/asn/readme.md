@@ -1,5 +1,5 @@
 # ASN.1 Grammar
 
 ## Reference
-* [pldb](http://pldb.info/concepts/asn-1)
+* [pldb](http://pldb.io/concepts/asn-1)
 

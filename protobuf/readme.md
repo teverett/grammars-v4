@@ -1,5 +1,5 @@
 # Protobuf
 
 ## Reference
-* [pldb](http://pldb.info/concepts/protobuf)
+* [pldb](http://pldb.io/concepts/protobuf)
 

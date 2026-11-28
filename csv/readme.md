@@ -1,5 +1,5 @@
 # CSV Grammar
 
 ## Reference
-* [pldb](http://pldb.info/concepts/csv)
+* [pldb](http://pldb.io/concepts/csv)
 

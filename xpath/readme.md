@@ -1,5 +1,5 @@
 # Xpath
 
 ## Reference
-* [pldb](http://pldb.info/concepts/xpath)
+* [pldb](http://pldb.io/concepts/xpath)
 
