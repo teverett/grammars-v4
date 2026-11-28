@@ -1,0 +1,9 @@
+fordemo;
+main:
+BEGIN
+  INTEGER i, total;
+  total <- 0;
+  FOR i <- 1, 2, 4, 7, 15 DO total <- total + i;
+  FOR i <- i+1 WHILE i < 10 DO total <- total + i;
+  FOR i <- 1 STEP 1 UNTIL 10 DO total <- total + i
+END

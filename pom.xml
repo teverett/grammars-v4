@@ -191,6 +191,7 @@
 				<module>coc</module>
 				<module>codeql</module>
 				<module>cookie</module>
+				<module>coral66</module>
 				<module>corundum</module>
 				<module>cowsel</module>
 				<module>cpl</module>
@@ -370,6 +371,7 @@
 				<module>pharo</module>
 				<module>php</module>
 				<module>pii</module>
+				<module>pilot</module>
 				<!-- <module>pike</module> -->
 				<module>plantUML</module>
                 <module>plexil</module>
@@ -438,6 +440,7 @@
 				<module>sexpression</module>
 				<module>sgf</module>
 				<module>sharc</module>
+				<module>shortcode</module>
 				<module>sici</module>
 				<module>sieve</module>
                 <module>simscript</module>

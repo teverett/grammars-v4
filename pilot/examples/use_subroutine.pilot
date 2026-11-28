@@ -1,0 +1,6 @@
+U:*INITIALIZE
+T:Starting the quiz.
+E:
+*INITIALIZE
+C:#SCORE=0
+E:

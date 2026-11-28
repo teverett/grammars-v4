@@ -1,0 +1,8 @@
+litdemo;
+main:
+BEGIN
+  INTEGER a, b, c;
+  a <- OCTAL(1402371);
+  b <- LITERAL(x);
+  c <- 42
+END

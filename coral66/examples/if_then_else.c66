@@ -1,0 +1,10 @@
+ifdemo;
+main:
+BEGIN
+  INTEGER x, y, z;
+  x <- 5;
+  y <- 3;
+  IF x > y THEN z <- x ELSE z <- y;
+  IF x > 0 AND y > 0 THEN z <- 1;
+  IF x > y OR x = y THEN z <- x
+END

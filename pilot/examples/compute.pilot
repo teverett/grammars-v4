@@ -1,0 +1,7 @@
+T:Enter #X
+A:#X
+T:Enter #Y
+A:#Y
+C:#AM=(#X+#Y)/2
+T:The average is #AM
+E:

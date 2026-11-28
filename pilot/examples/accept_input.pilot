@@ -1,0 +1,7 @@
+T:What is your name?
+A:$FREE
+T:What are your coordinates?
+A:$X,$Y,$Z
+T:Enter a number
+A:#Q
+E:

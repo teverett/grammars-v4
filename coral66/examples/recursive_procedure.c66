@@ -1,0 +1,11 @@
+recdemo;
+main:
+BEGIN
+  INTEGER RECURSIVE fact (VALUE INTEGER n);
+  BEGIN
+    IF n <= 1 THEN ANSWER 1;
+    ANSWER n * fact(n - 1)
+  END;
+  INTEGER result;
+  result <- fact(5)
+END

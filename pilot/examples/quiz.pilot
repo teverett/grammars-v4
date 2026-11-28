@@ -1,0 +1,10 @@
+R:A short quiz program.
+*START
+T:What is the capital of France?
+A:$ANSWER
+M:PARIS
+TY:Correct!
+TN:No, the answer is Paris.
+JN:*START
+T:Well done, you may continue.
+E:

@@ -1,0 +1,5 @@
+C:#X=5
+C:#Y=2
+C:#Z=1
+T(#X>#Y+#Z):Condition met
+E:

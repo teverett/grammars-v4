@@ -1,0 +1,8 @@
+bitsdemo;
+main:
+BEGIN
+  INTEGER x, y;
+  x <- 3;
+  BITS [2,6] x <- 3;
+  y <- BITS [2,6] x
+END

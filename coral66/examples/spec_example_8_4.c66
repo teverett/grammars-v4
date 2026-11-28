@@ -1,0 +1,12 @@
+demo;
+main:
+BEGIN
+  INTEGER i;
+  INTEGER PROCEDURE p; ANSWER i;
+  i <- 0;
+  BEGIN
+    INTEGER i;
+    i <- 2;
+    print(p)
+  END
+END

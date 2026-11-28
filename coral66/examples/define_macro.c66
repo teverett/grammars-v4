@@ -1,0 +1,8 @@
+macrodemo;
+main:
+BEGIN
+  DEFINE shift6 «CODE BEGIN 123,45,6 END»;
+  INTEGER i;
+  shift6;
+  i <- 1
+END

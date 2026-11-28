@@ -1,0 +1,5 @@
+R:This program greets the user and records their response.
+T:Hello there!
+A:$NAME
+R:End of program.
+E:

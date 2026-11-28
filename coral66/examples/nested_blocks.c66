@@ -1,0 +1,14 @@
+blockdemo;
+main:
+BEGIN
+  INTEGER total;
+  total <- 0;
+  BEGIN
+    total <- total + 1;
+    total <- total + 2
+  END;
+  IF total > 0 THEN
+  BEGIN
+    total <- total * 2
+  END
+END

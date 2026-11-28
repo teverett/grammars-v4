@@ -1,0 +1,8 @@
+commentdemo;
+main:
+BEGIN
+  COMMENT this program demonstrates the COMMENT statement;
+  INTEGER i;
+  COMMENT set i to zero;
+  i <- 0
+END

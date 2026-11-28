@@ -1,0 +1,9 @@
+arraydemo;
+main:
+BEGIN
+  FIXED (13,5) x, y;
+  INTEGER ARRAY p, q, r[1:3], s[1:4], t, u[1:2, 1:3];
+  INTEGER a, b, c <- 1, 2, 3;
+  INTEGER ARRAY k[1:2, 1:2] <- 11, 12, 21, 22;
+  x <- 0.0
+END

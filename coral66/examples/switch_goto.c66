@@ -1,0 +1,15 @@
+switchdemo;
+main:
+BEGIN
+  LABEL a, b, c;
+  SWITCH s <- a, b, c;
+  INTEGER n;
+  n <- 2;
+  GOTO s[n];
+a:
+  GOTO c;
+b:
+  GOTO c;
+c:
+  n <- 0
+END
