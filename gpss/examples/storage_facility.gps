@@ -1,0 +1,10 @@
+; a multi-capacity STORAGE facility, entered/left instead of SEIZE/RELEASE
+        SIMULATE
+TANK    STORAGE 5
+        GENERATE 4,1
+        ENTER TANK
+        ADVANCE 6,2
+        LEAVE TANK
+        TERMINATE 1
+        START 30
+        END

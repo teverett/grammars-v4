@@ -1,0 +1,5 @@
+* DO / ENDDO loop with indicator-controlled calc lines
+H
+C 1 DO 10 IDX
+C ADD IDX SUM
+C ENDDO

@@ -1,0 +1,10 @@
+; a VARIABLE statement combining two savevalues into an expression
+TOTCNT  VARIABLE X1+X2*2
+        SIMULATE
+        GENERATE 5
+        SAVEVALUE 1,1
+        SAVEVALUE 2,2
+        ASSIGN 1,V$TOTCNT
+        TERMINATE 1
+        START 10
+        END

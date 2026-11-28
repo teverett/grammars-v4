@@ -1,0 +1,7 @@
+* a printer output file with multiple output lines
+H
+F QPRINT O F 132 PRINTER
+C EXCPT DETAIL
+O QPRINT E 1 CUSTNAME
+O E 2 BALANCE
+O E 3 'END OF REPORT'

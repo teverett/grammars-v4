@@ -1,0 +1,5 @@
+* print a greeting via an EXCPT output line
+H
+F QPRINT O F 132 PRINTER
+C EXCPT GREET
+O QPRINT E 1 'HELLO, RPG III!'

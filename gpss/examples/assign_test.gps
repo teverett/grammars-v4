@@ -1,0 +1,9 @@
+; ASSIGN a parameter, then gate flow on it with TEST
+        SIMULATE
+        GENERATE 5
+        ASSIGN 1,3
+        TEST GE,P1,2,SKIP
+        ADVANCE 10
+SKIP    TERMINATE 1
+        START 25
+        END

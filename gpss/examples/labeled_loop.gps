@@ -1,0 +1,8 @@
+; a labeled block used as a LOOP target
+        SIMULATE
+        GENERATE 10
+AGAIN   ADVANCE 2,1
+        LOOP CTR,AGAIN
+        TERMINATE 1
+        START 50
+        END

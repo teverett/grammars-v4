@@ -1,0 +1,6 @@
+* resulting- and controlling-indicator groups on calc lines, written in
+* parentheses since this grammar does not track fixed source columns
+H
+C COUNT COMP LIMIT (10,20)
+C (10) MOVE 'OVER' MSG
+C (N20) SETON (30)

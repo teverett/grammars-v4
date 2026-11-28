@@ -1,0 +1,8 @@
+; SAVEVALUE storing a running count, referenced later as an X-type SNA
+        SIMULATE
+        GENERATE 5
+        SAVEVALUE COUNT,1
+        ADVANCE X$COUNT+1
+        TERMINATE 1
+        START 15
+        END

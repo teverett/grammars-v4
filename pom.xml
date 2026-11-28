@@ -249,6 +249,7 @@
 				<module>gml</module>
 				<module>golang</module>
 				<module>gopher</module>
+				<module>gpss</module>
 				<module>graphql</module>
 				<module>graphstream-dgs</module>
 				<module>gtin</module>
@@ -411,6 +412,7 @@
                 <module>robotalk</module>
 				<module>romannumerals</module>
 				<module>ron</module>
+				<module>rpg3</module>
 				<module>rpn</module>
 				<module>ruleworks</module>
 				<module>rust</module>

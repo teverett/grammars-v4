@@ -1,0 +1,10 @@
+; unconditional and statistical TRANSFER blocks
+        SIMULATE
+        GENERATE 5
+        TRANSFER 0.3,ALT1,ALT2
+ALT1    ADVANCE 1
+        TRANSFER ,DONE
+ALT2    ADVANCE 2
+DONE    TERMINATE 1
+        START 20
+        END

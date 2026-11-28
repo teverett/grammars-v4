@@ -1,0 +1,7 @@
+* basic arithmetic calc-spec operations
+H
+C Z-ADD 0 TOTAL
+C ADD AMOUNT TOTAL
+C SUB DISCOUNT TOTAL
+C MULT RATE TOTAL
+C DIV COUNT TOTAL

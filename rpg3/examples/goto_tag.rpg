@@ -1,0 +1,7 @@
+* unconditional branch with GOTO/TAG, and program termination
+H
+C GOTO SKIP
+C ADD 1 COUNT
+C TAG SKIP
+C RETRN
+C END

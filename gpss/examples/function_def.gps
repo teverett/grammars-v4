@@ -1,0 +1,8 @@
+; a FUNCTION definition used to drive ADVANCE times
+SERVTIME FUNCTION RN1,C5
+        SIMULATE
+        GENERATE 5
+        ADVANCE FN$SERVTIME
+        TERMINATE 1
+        START 40
+        END

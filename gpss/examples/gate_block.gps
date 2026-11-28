@@ -1,0 +1,10 @@
+; GATE block checking facility status before SEIZE
+        SIMULATE
+        GENERATE 5
+        GATE SNF,CLERK
+        SEIZE CLERK
+        ADVANCE 3
+        RELEASE CLERK
+        TERMINATE 1
+        START 25
+        END

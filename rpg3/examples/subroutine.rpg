@@ -1,0 +1,6 @@
+* a subroutine invoked with EXSR, defined with BEGSR/ENDSR
+H
+C EXSR CALCTOT
+C BEGSR CALCTOT
+C ADD AMOUNT TOTAL
+C ENDSR

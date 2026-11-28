@@ -1,0 +1,11 @@
+; classic single-server queueing model
+        SIMULATE
+        GENERATE 5,2
+        QUEUE LINE
+        SEIZE CLERK
+        DEPART LINE
+        ADVANCE 3,1
+        RELEASE CLERK
+        TERMINATE 1
+        START 100
+        END

@@ -1,0 +1,10 @@
+; a TABLE definition collecting ADVANCE-time statistics via TABULATE
+TIMETAB TABLE M1,5,2,10
+        SIMULATE
+        GENERATE 5
+        MARK
+        ADVANCE 6,3
+        TABULATE TIMETAB
+        TERMINATE 1
+        START 25
+        END

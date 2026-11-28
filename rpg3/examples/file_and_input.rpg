@@ -1,0 +1,7 @@
+* a disk input file with field definitions
+H
+F CUSTMAST IF E DISK
+I CUSTREC
+I NAME 1-20
+I BALANCE 21-30,2
+C Z-ADD BALANCE TOTAL

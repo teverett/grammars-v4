@@ -1,0 +1,5 @@
+* calling another program and passing parameters
+H
+C CALL 'SUBPGM'
+C PARM CUSTKEY KEYPARM
+C PARM AMOUNT AMTPARM
