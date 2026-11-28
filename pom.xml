@@ -453,6 +453,7 @@
 				<module>spice</module>
                 <module>spk</module>
                 <module>spl</module>
+                <module>spss</module>
                 <module>squeak</module>
                 <module>sql</module>
                 <module>squirrel</module>
