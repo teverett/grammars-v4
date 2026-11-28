@@ -1,0 +1,13 @@
+Checked: PROGRAM = BEGIN
+
+BadValue: ERROR;
+
+Check: PROC [n: INTEGER] = BEGIN
+  IF n < 0 THEN ERROR BadValue;
+END;
+
+Run: PROC [] = BEGIN
+  Check[-1] ! BadValue => CONTINUE;
+END;
+
+END.

@@ -1,0 +1,5 @@
+Hello: PROGRAM = BEGIN
+
+greeting: STRING _ "Hello, world!";
+
+END.

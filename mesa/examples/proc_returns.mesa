@@ -1,0 +1,9 @@
+Arith: PROGRAM = BEGIN
+
+Max: PROC [a, b: INTEGER] RETURNS [INTEGER] = BEGIN
+  IF a > b THEN RETURN [a] ELSE RETURN [b];
+END;
+
+result: INTEGER _ Max[3, 7];
+
+END.

@@ -1,0 +1,2 @@
+let Z = X + Y where X, Y = 3, 4
+Z := Z + 1 where Z = 0

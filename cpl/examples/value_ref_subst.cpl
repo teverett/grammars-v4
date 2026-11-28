@@ -1,0 +1,4 @@
+let x, y = 1, 2
+let a, b ≃ x, y
+let i = a
+let w ≡ x*x + 2*x*y + y*y

@@ -1,0 +1,6 @@
+let X = 1
+let Y = 2
+let T = Mk3(Mult, X, Y)
+let Op = T[0]
+let Left = T[1]
+let Right = T[2]

@@ -1,0 +1,7 @@
+PointDefs: DEFINITIONS = BEGIN
+
+Point: TYPE = RECORD [x: INTEGER, y: INTEGER];
+
+MakePoint: PROC [x, y: INTEGER] RETURNS [Point];
+
+END.

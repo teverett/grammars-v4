@@ -1,0 +1,6 @@
+let Items = 3
+let Sum = 0
+while Items > 0 do §
+Sum := Sum + Items;
+Items := Items - 1
+§̸

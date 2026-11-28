@@ -1,0 +1,8 @@
+let X = 10
+let A ≃ X
+let I = A
+let P = 0
+let V = 0
+P, V!P := P+1, P
+let Addr = @X
+let AddrOld = LV X

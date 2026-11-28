@@ -180,6 +180,7 @@
 				<module>cerbac</module>
                 <module>chip8</module>
                 <module>chip8octo</module>
+				<module>clean</module>
 				<module>clazz</module>
 				<module>clf</module>
 				<module>clif</module>
@@ -192,6 +193,7 @@
 				<module>cookie</module>
 				<module>corundum</module>
 				<module>cowsel</module>
+				<module>cpl</module>
 				<module>cpp</module>
 				<module>cql</module>
 				<module>cql3</module>
@@ -272,6 +274,7 @@
 				<module>inf</module>
 				<module>informix</module>
 				<module>infosapient</module>
+				<module>ipl</module>
 				<module>iri</module>
 				<module>iso8601</module>
 				<module>istc</module>
@@ -315,12 +318,14 @@
 				<module>ltl</module>
 				<module>lua</module>
 				<module>lucene</module>
+				<module>mad</module>
 				<module>makefile</module>
 				<module>maml</module>
 				<module>matlab</module>
 				<module>mckeeman-form</module>
 				<module>mdx</module>
 				<module>memcached_protocol</module>
+				<module>mesa</module>
 				<module>mermaid</module>
 				<module>metamath</module>
 				<module>metric</module>
@@ -427,6 +432,7 @@
 				<module>scotty</module>
 				<module>scss</module>
 				<module>sdl</module>
+				<module>self</module>
 				<module>semver</module>
 				<module>setl</module>
 				<module>sexpression</module>

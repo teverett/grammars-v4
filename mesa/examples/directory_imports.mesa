@@ -1,0 +1,10 @@
+DIRECTORY PointDefs, IOUtils;
+
+Geometry: PROGRAM
+  IMPORTS PointDefs, IOUtils;
+  EXPORTS Geometry;
+  = BEGIN
+
+origin: INTEGER _ 0;
+
+END.

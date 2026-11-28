@@ -1,0 +1,12 @@
+SumLoop: PROGRAM = BEGIN
+
+total: INTEGER _ 0;
+
+Sum: PROC [n: INTEGER] RETURNS [INTEGER] = BEGIN
+  FOR i IN [1..n] DO
+    total _ total + i;
+  ENDLOOP;
+  RETURN [total];
+END;
+
+END.

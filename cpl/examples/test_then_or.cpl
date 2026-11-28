@@ -1,0 +1,3 @@
+let Row = 1
+let All = 1
+test Row = All then Row := 0 or Row := Row + 1

@@ -1,0 +1,1 @@
+let rec Fact(n) = n = 0 -> 1, n * Fact(n-1)

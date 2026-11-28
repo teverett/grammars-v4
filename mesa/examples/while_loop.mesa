@@ -1,0 +1,11 @@
+CountDown: PROGRAM = BEGIN
+
+n: INTEGER _ 10;
+
+Run: PROC [] = BEGIN
+  WHILE n > 0 DO
+    n _ n - 1;
+  ENDLOOP;
+END;
+
+END.

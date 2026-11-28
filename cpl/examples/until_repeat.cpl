@@ -1,0 +1,3 @@
+let N = 0
+until N > 10 do N := N + 1
+repeat N := N - 1 until N = 0

@@ -1,0 +1,5 @@
+;; This is a comment line, Lisp style.
+;;; A triple-semicolon comment, also seen in .liplv files.
+(:comments :type :name :sign :pq :symb :link :comments.1 :id)
+; a single-semicolon comment
+("M2 MULTIPLE PROBLEM EXECUTIVE." "" "M2" "" "10" "L3" "" "" "M002R000")

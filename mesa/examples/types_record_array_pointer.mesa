@@ -1,0 +1,13 @@
+Types: PROGRAM = BEGIN
+
+Point: TYPE = RECORD [x: INTEGER, y: INTEGER];
+
+IntArray: TYPE = ARRAY [0..9] OF INTEGER;
+
+PointPtr: TYPE = POINTER TO Point;
+
+numbers: IntArray;
+p: Point;
+pp: PointPtr;
+
+END.

@@ -1,0 +1,8 @@
+(:comments :type :name :sign :pq :symb :link :comments.1 :id)
+(" PROGRAM HEADER" "5" "" "" "" "" "" "" " R -")
+("M1 SINGLE PROBLEM EXECUTIVE FOR" "" "M1" "" "" "M3" "" "" "M001R000")
+("" "2" "A" "" "" "" "10" "" "0000 000")
+("" "" "" "" "60" "W0" "" "1W0=PROB" "M001R020")
+("" "" "" "" "" "M43" "" "" "M001R030")
+(" IF NO GOOD, QUIT." "" "" "" "70" "9-4" "" "" "M001R040")
+("" "1" "" "" "" "" "" "" " R")

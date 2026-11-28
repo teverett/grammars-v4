@@ -1,0 +1,15 @@
+Classify: PROGRAM = BEGIN
+
+n: INTEGER _ 2;
+label: INTEGER _ 0;
+
+Run: PROC [] = BEGIN
+  SELECT n FROM
+    1 => label _ 1;
+    2, 3 => label _ 2;
+  ELSE
+    label _ 0;
+  ENDCASE;
+END;
+
+END.

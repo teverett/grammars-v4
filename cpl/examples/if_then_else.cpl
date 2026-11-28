@@ -1,0 +1,3 @@
+let Best, BestVal = 0, 0
+let Val = 5
+if Val > BestVal then Best, BestVal := Val, Val else Best := Best

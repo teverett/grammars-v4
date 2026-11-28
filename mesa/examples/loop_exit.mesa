@@ -1,0 +1,12 @@
+FindFirst: PROGRAM = BEGIN
+
+n: INTEGER _ 0;
+
+Find: PROC [] = BEGIN
+  LOOP
+    n _ n + 1;
+    IF n > 100 THEN EXIT;
+  ENDLOOP;
+END;
+
+END.
