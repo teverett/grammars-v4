@@ -1,0 +1,4 @@
+function isatom
+lambda x
+define x atom then *1 end
+*0 up

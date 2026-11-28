@@ -1,0 +1,4 @@
+function iszero
+lambda x
+x zerop then *1 end
+*0 up

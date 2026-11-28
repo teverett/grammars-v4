@@ -1,0 +1,5 @@
+function advance
+lambda x y
+x hd -> y
+x tl -> x
+y up

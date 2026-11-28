@@ -1,0 +1,7 @@
+function length
+lambda x y
+comment count the elements of list x, starting from count y;
+x atom then y end
+x tl -> x
+y add1 -> y
+repeat up

@@ -1,0 +1,4 @@
+comment a word value is assigned into a variable with the reversed "->" arrow;
+vars greeting;
+"hello" -> greeting;
+pr(greeting);

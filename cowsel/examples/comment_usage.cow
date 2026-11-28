@@ -1,0 +1,4 @@
+function identity
+lambda x
+comment just return x unchanged;
+x up

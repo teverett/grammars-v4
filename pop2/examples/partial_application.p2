@@ -1,0 +1,2 @@
+vars f y1 z1 result;
+f(% y1, z1 %) -> result;

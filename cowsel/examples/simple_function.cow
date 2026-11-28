@@ -1,0 +1,3 @@
+function double
+lambda x
+x x plus up

@@ -1,0 +1,2 @@
+vars a pairup;
+lambda x y; cons(x, cons(a, y)) end -> pairup;

@@ -1,0 +1,7 @@
+function sign
+lambda x
+define x zerop then
+    x negp then *2 end
+    *0
+end
+*1 up

@@ -191,6 +191,7 @@
 				<module>codeql</module>
 				<module>cookie</module>
 				<module>corundum</module>
+				<module>cowsel</module>
 				<module>cpp</module>
 				<module>cql</module>
 				<module>cql3</module>
@@ -375,6 +376,8 @@
                 <module>pluscal</module>
 				<module>ply</module>
 				<module>pmmn</module>
+				<module>pop2</module>
+				<module>pop11</module>
 				<module>postalcode</module>
 				<module>postscript</module>
 				<module>powerbuilder</module>

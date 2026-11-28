@@ -1,0 +1,2 @@
+vars x y z w result;
+if x>0 and x<3 then y elseif x>3 then z else w close -> result;

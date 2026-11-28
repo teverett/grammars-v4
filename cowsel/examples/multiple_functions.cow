@@ -1,0 +1,7 @@
+function first
+lambda x
+x hd up
+
+function rest
+lambda x
+x tl up
